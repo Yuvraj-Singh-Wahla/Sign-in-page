@@ -1,0 +1,120 @@
+body{
+    --border-radius:4px;
+    --color-primary:rgb(0, 155, 103);
+    --color-primary-dark:rgb(2, 126, 85);
+    --color-error:rgb(196, 47, 47);
+    --color-secondary:rgb(21, 55, 119);
+    --color-success:rgb(36, 143, 36);
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background: url("image.jfif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 18px;
+}
+.container{
+    background: #ffffff;
+    padding: 2rem;
+    margin: 1rem;
+    width: 400px;
+    max-width: 400px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container:first-child{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+.form__message{
+    text-align: center;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.form__message--error{
+    color:var(--color-error);
+}
+
+.form__message--success{
+    color:var(--color-success);
+}
+
+.form__input--group{
+    font-size: 1rem;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.form__input{
+    margin: 0;  
+    font-size: 1rem;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid rgb(199, 199, 199);
+    background: rgb(230, 229, 229);
+}
+
+.form__input:focus{
+    border: 1px solid var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input--error--message{
+    padding: 00.45rem;
+}
+
+.form__button{
+    color: white;
+    font-size: 1.5rem;
+    background: var(--color-primary);
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.form__button:hover{
+    background: var(--color-primary-dark);
+}
+
+.form__button:active{
+    transform: scale(0.98);
+}
+
+.form__link{
+    text-decoration: none;
+    text-align: center;
+}
+
+.form__text{
+    text-align: center;
+    padding: 0.45rem;
+}
+
+.form__text:hover{
+    text-decoration: underline;
+}
